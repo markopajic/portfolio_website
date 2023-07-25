@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxx@qCLX/hHth/vu2KY3jCF70CQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Marko Pajic</title>
@@ -15,10 +21,7 @@
 <body>
     <section class="hero">
         <div class="main-width">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-e"></i>
-                </div>
+            <header class="header" id="header">
                 <nav>
                    <div class="hamb">
                     <span></span>
@@ -27,41 +30,258 @@
                    </div>
 
                    <ul class="nav-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li class="btn"><a href="#">Contact Me</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li class="btn"><a href="#contact">Contact Me</a></li>
                    </ul>
                 </nav>
             </header>
 
             <div class="container">
                 <div class="hero-text">
-                    <h3>Hi, There!</h3>
+                    <h3>Welcome!</h3>
                     <h1>I Am <span class="input"></span></h1>
-                    <p>Ovde ide neki text.Ovde ide neki text.Ovde ide neki text.Ovde ide neki text.Ovde ide neki text.</p>
+                    <p>I'm a passionate PHP developer, with one year of experience in the world of programming. I use PHP, JavaScript, HTML, CSS, Angular JS and other languages and frameworks ​and MySQL Databse and Apache open-source web server software ​to create websites or applications.</p>
                     <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/markopajic/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/markopajic" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
-                    <button type="button">More About Me</button>
+                    <a href="#about"><button type="button">More About Me</button></a>
                 </div>
-                <div class="bottom">
-                    <p>C 2023 Marko Pajic - All Rights Reserved.</p>
+
+                <div class="homeimage">
+                    <img src="images/slika2.png" width="370" height="370">
+
                 </div>
             </div>
-        </div>
+
+
+            <!-- ========== ABOUT ME ========== -->
+                <section class="about" id="about">
+
+                    <!--image for about-->
+                    <div class="about-img">
+                        <img src="images/slika2.png" width="270" height="270">
+                    </div>
+
+                    <!--content for about-->
+                    <div class="about-content">
+                        <h2 class="heading">About <span>Me</span></h2>
+                        <h3>Software Developer</h3>
+                        <p>Being a software developer, I have a holistic approach to problem-solving. I thrive on tackling complex challenges and transforming ideas into functional software applications. My expertise extends beyond PHP, encompassing languages like JavaScript, HTML, and CSS. This enables me to craft seamless user interfaces, optimize front-end experiences, and deliver comprehensive full-stack solutions.</p>
+                        <p>Throughout my journey, I have developed a strong foundation in software development principles, including clean code practices, version control, and agile methodologies. I am committed to continuous learning and staying up-to-date with the latest industry trends and best practices to ensure the highest level of professionalism and efficiency in my work.</p>
+                        <a href="#skills" class="btn">Skills</a>
+                    </div>
+                </section>
+                
+            <!-- ========== SKILLS ========== -->
+            <section class="skills" id="skills">
+            <section class="skills section container grid">
+                <div class="skills__container">
+                    <div class="skills_data">
+                        <h3 class="section__subtitle"> Favorite <span>Skills</span</h3>
+                            <h2 class="section__title">My Skills</h2>
+                            <p class="skills__description">See fully what skills I have and perform to develop the projects for you.</p>
+                    </div>
+
+                    <div class="skills__content">
+                        <ol class="skills__group">
+                            <li class="skills__item">PHP</li>
+                            <li class="skills__item">JavaScript</li>
+                            <li class="skills__item">Angular JS</li>
+                            <li class="skills__item">MySQL</li>
+                        </ol>
+
+                        <ol class="skills__group" start="5">
+                            <li class="skills__item">HTML5</li>
+                            <li class="skills__item">CSS3</li>
+                            <li class="skills__item">Apache</li>
+                            <li class="skills__item">Bootstrap</li>
+                        </ol>
+                    </div>
+                    <a href="#services" class="btn">My Services</a>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- ========== SERVICES ========== -->
+            <section class="services section" id="services">
+                <div class="services__headline">
+                    <h3 class="section__subtitle">My <span>Services</span> | What I Do</h3>
+                </div>
+                <div class="services__container container grid">
+
+                    <article class="services__card">
+                        <i class="ri-layout-3-line services__icon"></i>
+                        <h2 class="services_tittle">Software Developer</h2>
+                        <p class="services__description">With a passion for crafting efficient and elegant solutions, I specialize in building robust web applications. My expertise lies in full-stack development, utilizing the latest technologies and frameworks to deliver seamless user experiences.</p>
+                    </article>
+
+                    <article class="services__card">
+                        <i class="ri-pantone-line services__icon"></i>
+                        <h2 class="services_tittle">Full-Stack Developer</h2>
+                        <p class="services__description"> Equipped with a diverse skill set encompassing both front-end and back-end technologies, I excel in delivering end-to-end web solutions. From designing intuitive user interfaces to implementing scalable server-side architectures.</p>
+                    </article>
+
+                    <article class="services__card">
+                        <i class="ri-pen-nib-line services__icon"></i>
+                        <h2 class="services_tittle">PHP Developer</h2>
+                        <p class="services__description">As a dedicated PHP developer, I specialize in creating dynamic and interactive web applications. From crafting efficient database queries to integrating third-party APIs, I leverage the power of PHP to bring ideas to life on the web.</p>
+                    </article>
+
+                </div>
+            </section>
+
+
+        <!-- ========== PROJECTS ========== -->
+            <section class="projects__section" id="projects">
+                <div class="projects__headline">
+                        <h3 class="section__subtitle">My <span>Jobs</span> | Recent Projects</h3>
+                </div>
+
+                <div class="projects_container container grid">
+
+                    <article class="projects__cards">
+                        <img src="images/img-project-1.jpg" alt="projects image" class="projects__img">
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Application</span>
+                            <h2 class="projects__title">Sign Up & Sign In</h2>
+                            <a href="https://github.com/markopajic/signuplogin" target="_blank" class="projects__button">View Code <i class="ri-link"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="projects__cards">
+                        <img src="images/img-project-2.jpg" alt="projects image" class="projects__img">
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Full-Stack</span>
+                            <h2 class="projects__title">Modern Website</h2>
+                            <a href="http://www.perfectluxsistem.rs/index.php" target="_blank" class="projects__button">View Site <i class="ri-link"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="projects__cards">
+                        <img src="images/img-project-3.jpg" alt="projects image" class="projects__img">
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Application</span>
+                            <h2 class="projects__title">Pagination Table</h2>
+                            <a href="https://github.com/markopajic/pagination_table_bootstrap" target="_blank" class="projects__button">View Code <i class="ri-link"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="projects__cards">
+                        <img src="images/img-project-4.jpg" alt="projects image" class="projects__img">
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Web</span>
+                            <h2 class="projects__title">Portfolio Website</h2>
+                            <a href="https://github.com/markopajic/portfolio_website" target="_blank" class="projects__button">View Code <i class="ri-link"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="projects__cards">
+                        <img src="images/img-project-5.jpg" alt="projects image" class="projects__img">
+                        <div class="projects__modal">
+                            <span class="projects__subtitle">Application</span>
+                            <h2 class="projects__title">Shopping Cart</h2>
+                            <a href="https://github.com/markopajic/signuplogin" target="_blank" class="projects__button">View Code <i class="ri-link"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <div class="btn__projects">
+                <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section class="contact__section" id="contact">
+            <div class="contact__headline">
+                <h3 class="section__subtitle">Get <span>In Touch</span> | Contact Me</h3>
+            </div>
+            
+            <div class="contact__container">
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__group">
+                        <input type="text" name="user_name" required placeholder="Enter Your Name" class="contact__input">
+                        <input type="email" name="user_email" required placeholder="Enter Your E-mail" class="contact__input">
+                    </div>
+
+                    <textarea name="user_project" required placeholder="Enter Your Message" class="contact__input"></textarea>
+                
+                    <p class="contact__message" id="contact-message"></p>
+                    <button type="submit" class="button contact__button">Send Message</button>
+                
+                </form>
+            </div>
+        </section>
+
+
+        <!-- ========== FOOTER ========== -->
+    <section class="section__footer">
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>Who I am?</h4>
+                  <ul>
+                    <li><a href="#about">Software developer</a></li>
+                    <li><a href="#about">PHP Developer</a></li>
+                    <li><a href="#about">Full-Stack Developer</a></li>
+                    <li><a href="#about">Web Developer</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>What do I know?</h4>
+                  <ul>
+                    <li><a href="#skills">PHP</a></li>
+                    <li><a href="#skills">JavaScript</a></li>
+                    <li><a href="#skills">Angular JS</a></li>
+                    <li><a href="#skills">HTML5 & CSS3</a></li>
+                    <li><a href="#skills">MySQL</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>What have I done?</h4>
+                  <ul>
+                    <li><a href="https://github.com/markopajic/signuplogin" target="_blank">Sign Up & Sign In</a></li>
+                    <li><a href="http://www.perfectluxsistem.rs/index.php" target="_blank">Modern Website</a></li>
+                    <li><a href="https://github.com/markopajic/pagination_table_bootstrap" target="_blank">Pagination Table</a></li>
+                    <li><a href="https://github.com/markopajic/portfolio_website" target="_blank">Portfolio Website</a></li>
+                    <li><a href="https://github.com/markopajic/signuplogin" target="_blank">Shopping Cart</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Pratite nas</h4>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/markopajic/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="https://github.com/markopajic" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </footer>
     </section>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- ========== SCROLLREVEAL JS ========== -->
+    <script src="scrollreveal.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".input", {
-            strings:["Marko Pajić.","Web Developer.","Graphic Designer."],
+            strings:["Marko Pajić.","Software Developer.","PHP Developer.","Full-Stack Developer.","Web Developer."],
             typeSpeed: 70,
             backSpeed: 60,
             loop:true
